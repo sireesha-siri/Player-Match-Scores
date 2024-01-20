@@ -1,0 +1,31 @@
+//Get all players
+GET http://localhost:3000/players/
+
+###
+//Get player
+GET http://localhost:3000/players/2/
+
+###
+//Update player
+PUT http://localhost:3000/players/5/
+Content-Type: application/json
+
+{
+  "playerName": "Raju"
+}
+
+###
+//Get match details
+GET http://localhost:3000/matches/18/
+
+###
+//Get matches by player
+GET http://localhost:3000/players/2/matches/
+
+###
+//Get player in match
+GET http://localhost:3000/matches/1/players/
+
+###
+//Get statistics
+GET http://localhost:3000/players/1/playerScores
